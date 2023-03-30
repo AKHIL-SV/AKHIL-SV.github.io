@@ -73737,15 +73737,15 @@ $C:"$3",
 $R:3,
 $S:424}
 A.a0p.prototype={
-$0(){var s,r,q=this.a
-if(q.d===6){s=document.createElement("a")
-s.href="assets/resume/ResumeN.pdf"
-s.download="Akhil SV"
+$0(){var s,r,q="assets/resume/ResumeN.pdf",p=this.a
+if(p.d===6){s=document.createElement("a")
+s.href=q
+s.download=q
 s.click()}else{r=A.nT(this.b,!1,t.v)
-r.a=q.c
-r.af()}q=this.c
-q.c=0
-q.af()},
+r.a=p.c
+r.af()}p=this.c
+p.c=0
+p.af()},
 $S:0}
 A.a0o.prototype={
 $1(a){var s=this.b
