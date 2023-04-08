@@ -33,9 +33,11 @@
   <title>AKHIL SV</title>
   <link rel="manifest" href="manifest.json">
 
+
+
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '66022360';
+    var serviceWorkerVersion = '1623493920';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
@@ -57,6 +59,8 @@
 </head>
 
 <body style="overflow: hidden">
+
+
 
   <div id="loading_indicator" class="container">
     <img class="indicator" src="./assets/1.gif" />
@@ -87,6 +91,25 @@
       }, 40000);
     };
   </script>
+  <script type="module">
+    import { initializeApp } from "firebase/app";
+    import { getAnalytics } from "firebase/analytics";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyABJwgEAzmN6Vpp21qtI7wNfca5oXjdKiE",
+      authDomain: "personal-portfolio-843a9.firebaseapp.com",
+      projectId: "personal-portfolio-843a9",
+      storageBucket: "personal-portfolio-843a9.appspot.com",
+      messagingSenderId: "177966902782",
+      appId: "1:177966902782:web:0b6f163c87d4a3f7d4a4af",
+      measurementId: "G-2BW7M5ZVQ3"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
 </body>
 
 </html>
